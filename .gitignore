@@ -3,8 +3,14 @@
 
 # Except for the following directories and files
 !App/
+!App/**
+
 !Core/
+!Core/**
+
 !build/
 !build/*.bin
+
 !.gitignore
 !.vscode/
+!.vscode/**
