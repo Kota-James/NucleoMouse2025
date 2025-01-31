@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "auxiliary.h"
+#include "display.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -107,25 +107,49 @@ int main(void)
   MX_TIM17_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  setbuf(stdout, NULL);   //for printf
+  printf("***** WMMC Nucleo Mouse 2025 *****\n");
 
+  int mode = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    led_write(1, 0, 0);
-    HAL_Delay(1000);
-    led_write(0, 1, 0);
-    HAL_Delay(1000);
-    led_write(0, 0, 1);
-    HAL_Delay(1000);
-    led_write(0, 0, 0);
-    HAL_Delay(1000);
-    led_write_2(1);
-    HAL_Delay(1000);
-    led_write_2(0);
-    HAL_Delay(1000);
+    mode = select_mode(mode);
+    switch(mode){
+        case 0:
+            printf("Hello, World!\n");
+            break;
+        case 1:
+            led_write(1, 0, 0);
+            HAL_Delay(1000);
+            led_write(0, 1, 0);
+            HAL_Delay(1000);
+            led_write(0, 0, 1);
+            HAL_Delay(1000);
+            led_write(0, 0, 0);
+            HAL_Delay(1000);
+            led_write_2(1);
+            HAL_Delay(1000);
+            led_write_2(0);
+            HAL_Delay(1000);
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        case 7:
+            break;
+    }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
