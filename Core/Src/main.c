@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "auxiliary.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -115,7 +115,16 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    led_write(1, 0, 0);
+    HAL_Delay(1000);
+    led_write(0, 1, 0);
+    HAL_Delay(1000);
+    led_write(0, 0, 1);
+    HAL_Delay(1000);
+    led_write(0, 0, 0);
+    HAL_Delay(1000);
+    led_write_2(1);
+    HAL_Delay(1000);    
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
