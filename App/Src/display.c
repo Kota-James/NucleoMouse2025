@@ -45,7 +45,7 @@ int select_mode(int mode){
 
     while(1){
         led_write(mode & 0b001, mode & 0b010, mode & 0b100);
-
+        
         if(HAL_GPIO_ReadPin(SW1_GPIO_Port, SW1_Pin) == GPIO_PIN_RESET){     //スイッチのGPIOピンにはpull-up抵抗がついているので、押されているときはLOW
             HAL_Delay(150);     //チャタリング防止
             // while(HAL_GPIO_ReadPin(SW3_GPIO_Port, SW3_Pin) == GPIO_PIN_RESET){     //スイッチが離されるのを待つ　なんか機能しないからオフにしとく
