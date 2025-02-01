@@ -30,6 +30,7 @@
 
 // Velocity info
 #define DEFAULT_V 140   //デフォルトの速度
+#define DEFAULT_ARR (TIRE_PERIMETER / (DEFAULT_V * PULSE_1_ROT)) * CLOCK
 #define DRIVEA_V  270   //デフォルトの半区画加速後の速度
 #define DEFAULT_A 300   //デフォルトの加速度
 #define DEFAULT_OFFSET 16   //オフセット距離[mm]
