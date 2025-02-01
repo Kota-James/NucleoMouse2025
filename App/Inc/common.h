@@ -16,5 +16,7 @@
 #include "main.h"
 #include "stm32f3xx_hal.h"
 // 他の共通ヘッダーファイルをここに追加
+#include "variables.h"
+#include "params.h"
 
 #endif /* __COMMON_H */
