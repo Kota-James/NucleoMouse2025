@@ -38,7 +38,7 @@ void led_write_2(uint8_t led4) {
  * @brief 
  * 
  * @param mode 
- * @return int 
+ * @return 
  */
 int select_mode(int mode){
     printf("Mode : %d\n", mode);
@@ -73,7 +73,7 @@ int select_mode(int mode){
  * @brief 
  * 
  * @param c 
- * @return int 
+ * @return 
  */
 int __io_putchar(int c) {
     if (c == '\n') {
