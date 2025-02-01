@@ -1,3 +1,13 @@
+/**
+ * @file common.h
+ * @author Kota-James
+ * @brief 
+ * @version 0.1
+ * @date 2025-02-01
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #ifndef __COMMON_H
 #define __COMMON_H
 

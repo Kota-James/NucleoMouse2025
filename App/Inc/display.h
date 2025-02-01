@@ -1,3 +1,14 @@
+/**
+ * @file display.h
+ * @author Kota-James
+ * @brief 
+ * @version 0.1
+ * @date 2025-02-01
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
 #ifndef __DISPLAY_H
 #define __DISPLAY_H
 
